@@ -23,8 +23,8 @@
                 <a href="#" class="logo">Sushi<span>Street</span></a>
                 <div class="menu-wrapper">
                     <ul class="menu">
-                        <li class="menu-item"><a href="index.html" class="menu-link active">Home</a></li>
-                        <li class="menu-item"><a href="service.html" class="menu-link">Services</a></li>
+                        <li class="menu-item"><a href="/" class="menu-link active">Home</a></li>
+                        <li class="menu-item"><a href="/services" class="menu-link">Services</a></li>
                         <li class="menu-item"><a href="Menu.html" class="menu-link">Menu</a></li>
                         <li class="menu-item"><a href="About Us.html" class="menu-link">About us</a></li>
                         <li class="menu-item"><a href="contact.html" class="menu-link">Contact</a></li>

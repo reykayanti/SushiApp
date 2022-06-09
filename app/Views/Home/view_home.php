@@ -1,7 +1,6 @@
 <?= $this->extend('Home/template_view.php'); ?>
 <?= $this->section('content_front'); ?>
 
-
 <!-- INI BUAT MASUKIN BAGIAN ISI YANG NON NAVIGASI SAMA NON FOOTER -->
 <section class="home" id="home">
             <div class="container home-wrapper">

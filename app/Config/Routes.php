@@ -36,7 +36,12 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+
+// routes home
 $routes->get('/', 'C_Home::index');
+$routes->get('/services', 'C_Home::services');
+
+// routes dashboard
 $routes->get('/admin', 'C_Dashboard::menu');
 
 /*

@@ -11,7 +11,7 @@ class C_Home extends BaseController
 
     public function services()
     {
-        return view('Dashboard/view_menu');
+        return view('Home/view_services');
     }
 
     public function menu()
