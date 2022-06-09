@@ -72,7 +72,6 @@
                   <i class="nav-icon fas fa-th"></i>
                   <p>
                     Menu
-                    <span class="badge badge-info right">2</span>
                   </p>
                 </a>
               </li>
@@ -88,10 +87,6 @@
                   <p>Logout</p>
                 </a>
               </li>
-             
-              
-              
-              
             </ul>
           </nav>
           <!-- /.sidebar-menu -->
