@@ -43,6 +43,7 @@ $routes->get('/services', 'C_Home::services');
 
 // routes dashboard
 $routes->get('/admin', 'C_Dashboard::menu');
+$routes->get('/addmenu', 'C_Dashboard::addmenu');
 
 /*
  * --------------------------------------------------------------------
