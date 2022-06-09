@@ -1,122 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title></title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AdminLTE 3 | General Form Elements</title>
 
-  <!-- General CSS Files -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
-  <!-- CSS Libraries -->
-  <link rel="stylesheet" href="../node_modules/prismjs/themes/prism.css">
-  <!-- Template CSS -->
-  <link rel="stylesheet" href="/dashboard/assets/css/style.css">
-  <link rel="stylesheet" href="/dashboard/assets/css/components.css">
-
-  <!-- Css native -->
-  <link rel="stylesheet" href="/assets/style-dashboard.css">
-</head>
-
-<body>
-  <div id="app">
-    <div class="main-wrapper">
-      <div class="navbar-bg"></div>
-      <nav class="navbar navbar-expand-lg main-navbar">
-        <form class="form-inline mr-auto">
-          <ul class="navbar-nav mr-3">
-            <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
-            <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
-          </ul>
-        </form>
-        <ul class="navbar-nav navbar-right">
-          
-          
-          <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-            <img alt="image" src="/dashboard/assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
-            <!-- admin -->
-            <div class="d-sm-none d-lg-inline-block"></div></a> 
-            <div class="dropdown-menu dropdown-menu-right">
-          
-              <a href="/logout" class="dropdown-item has-icon text-danger">
-                <i class="fas fa-sign-out-alt"></i> Logout
-              </a>
-            </div>
+    <!-- Google Font: Source Sans Pro -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="/dashboard/plugins/fontawesome-free/css/all.min.css"
+    />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="/dashboard/dist/css/adminlte.min.css" />
+  </head>
+  <body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+      <!-- Navbar -->
+      <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"
+              ><i class="fas fa-bars"></i
+            ></a>
           </li>
         </ul>
       </nav>
-      <div class="main-sidebar">
-        <aside id="sidebar-wrapper">
-          <div class="sidebar-brand">
-            <a href="index.html">Folskniture</a>
+      <!-- /.navbar -->
+
+      <!-- Main Sidebar Container -->
+      <aside class="main-sidebar sidebar-dark-primary elevation-4">
+       
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <!-- Sidebar user (optional) -->
+          <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+            <div class="image">
+              <img
+                src="/dashboard/dist/img/user2-160x160.jpg"
+                class="img-circle elevation-2"
+                alt="User Image"
+              />
+            </div>
+            <div class="info">
+              <a href="#" class="d-block">Alexander Pierce</a>
+            </div>
           </div>
-          <div class="sidebar-brand sidebar-brand-sm">
-            <a href="index.html">St</a>
-          </div>
-          <ul class="sidebar-menu">
+
+          <!-- Sidebar Menu -->
+          <nav class="mt-2">
+            <ul
+              class="nav nav-pills nav-sidebar flex-column"
+              data-widget="treeview"
+              role="menu"
+              data-accordion="false"
+            >
+              <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
               
-            
-              <li class="menu-header">Admin</li>
-              <li><a class="nav-link" href="/admin"><i class="fas fa-pencil-ruler"></i> <span>Dashboard</span></a></li>
-              <li><a class="nav-link" href="/admin/edit/1"><i class="fas fa-pencil-ruler"></i> <span>Header</span></a></li>
-              <li><a class="nav-link" href="/benefit/edit/1"><i class="fas fa-file-alt"></i> <span>Benefit</span></a></li>
-              <li><a class="nav-link" href="/product"><i class="fas fa-th"></i> <span>Product</span></a></li>
-              <li><a class="nav-link" href="/section/edit/1"><i class="fas fa-columns"></i> <span>Section</span></a></li>
               
-              </ul>
+              
+              <li class="nav-header">EXAMPLES</li>
+              <li class="nav-item">
+                <a href="../calendar.html" class="nav-link">
+                  <i class="nav-icon fas fa-th"></i>
+                  <p>
+                    Menu
+                    <span class="badge badge-info right">2</span>
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../gallery.html" class="nav-link">
+                  <i class="nav-icon fas fa-file"></i>
+                  <p>Gallery</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../kanban.html" class="nav-link">
+                  <i class="nav-icon fas fa-columns"></i>
+                  <p>Logout</p>
+                </a>
+              </li>
+             
+              
+              
+              
+            </ul>
+          </nav>
+          <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+      </aside>
 
-            
-        </aside>
-      </div>
-
-      <!-- Main Content -->
-      <div class="main-content">
-        <section class="section">
-          <div class="section-header">
-            <h1>aaa</h1>
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <div class="container-fluid">
+            <div class="row mb-2">
+              <div class="col-sm-6">
+                <h1>Sushi Street</h1>
+              </div>
+              
+            </div>
           </div>
-
-<!-- ================================ -->
-<!-- ================================ -->
-<!-- ==========ISI NYA DIBAWAH SINI== -->
-<!-- ================================ -->
-<!-- ================================ -->
-
-
-          <div class="section-body">
-
-          <?= $this->renderSection('content_admin'); ?>
-
-          </div>
-          
+          <!-- /.container-fluid -->
         </section>
+
+<!-- =============== BAGIAN BUAT KONTEN ==============================-->
+<!-- =============== BAGIAN BUAT KONTEN ==============================-->
+<!-- =============== BAGIAN BUAT KONTEN ==============================-->
+<?= $this->renderSection('content_dashboard'); ?>
+<!-- =============== BAGIAN BUAT KONTEN ==============================-->
+<!-- =============== BAGIAN BUAT KONTEN ==============================-->
+<!-- =============== BAGIAN BUAT KONTEN ==============================-->
       </div>
+      <!-- /.content-wrapper -->
       <footer class="main-footer">
-        <div class="footer-left">
-          Copyright &copy; 2022 <div class="bullet"></div>
-        </div>
-        <div class="footer-right">
-          2.3.0
-        </div>
+        
+        <strong
+          >Copyright &copy; 2022
+          <a href="#">Kelompok 1</a> Universitas Nasional . </strong
+        >
+        All rights reserved.
       </footer>
+
+      <!-- Control Sidebar -->
+      <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+      </aside>
+      <!-- /.control-sidebar -->
     </div>
-  </div>
+    <!-- ./wrapper -->
 
-  <!-- General JS Scripts -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  <script src="/dashboard/assets/js/stisla.js"></script>
-
-  <!-- JS Libraies -->
-
-  <!-- Template JS File -->
-  <script src="/dashboard/assets/js/scripts.js"></script>
-  <script src="/dashboard/assets/js/custom.js"></script>
-
-  <!-- Page Specific JS File -->
-</body>
+    <!-- jQuery -->
+    <script src="/dashboard/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="/dashboard/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- bs-custom-file-input -->
+    <script src="/dashboard/plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="/dashboard/dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="/dashboard/dist/js/demo.js"></script>
+    <!-- Page specific script -->
+    <script>
+      $(function () {
+        bsCustomFileInput.init();
+      });
+    </script>
+  </body>
 </html>
