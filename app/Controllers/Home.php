@@ -11,7 +11,7 @@ class Home extends BaseController
 
     public function services()
     {
-        return view('Home/view_services');
+        return view('Dashboard/view_menu');
     }
 
     public function menu()
