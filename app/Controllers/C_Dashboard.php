@@ -1,23 +1,28 @@
 <?php
 
 namespace App\Controllers;
-// use App\Models\MenuModel;
+use App\Models\MenuModel;
 
 class C_Dashboard extends BaseController
 {
-    // protected $menuModel;
+    protected $menuModel;
 
-    // public function __construct()
-	// {
-	// 	$this->menuModel = new MenuModel();
-	// }
+    public function __construct()
+	{
+		$this->menuModel = new MenuModel();
+	}
 
-    public function index()
+    public function menu()
     {
-        return view('dashboard/view_menu');
+        $menu    = $this->menuModel->findAll();
+        $data = [
+            'menu'    => $menu
+        ];
+        // dd($menu);
+        return view('dashboard/view_menu', $data);
     }
     
-    public function menu()
+    public function addmenu()
     {
         return view('dashboard/view_menu');
     }
