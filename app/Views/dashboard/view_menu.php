@@ -43,7 +43,7 @@
                     <td><img src="/img/<?= $m['img']; ?>" width="100px" alt=""></td>
                     <td><?= $m['updated_at']; ?></td>
                     <td>
-                      <a href="/editmenu">
+                      <a href="/C_Dashboard/edit/<?= $m['id']; ?>">
                         <button type="button" class="btn btn-block btn-primary"> Edit </button>
                       </a>
                       <a href="/C_Dashboard/delete/<?= $m['id']; ?>">
