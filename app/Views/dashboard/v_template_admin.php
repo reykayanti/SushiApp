@@ -68,19 +68,14 @@
               
               <li class="nav-header">EXAMPLES</li>
               <li class="nav-item">
-                <a href="../calendar.html" class="nav-link">
+                <a href="/admin" class="nav-link">
                   <i class="nav-icon fas fa-th"></i>
                   <p>
                     Menu
                   </p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="../gallery.html" class="nav-link">
-                  <i class="nav-icon fas fa-file"></i>
-                  <p>Gallery</p>
-                </a>
-              </li>
+              
               <li class="nav-item">
                 <a href="../kanban.html" class="nav-link">
                   <i class="nav-icon fas fa-columns"></i>
