@@ -127,16 +127,16 @@
                 <!-- Swiper -->
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
+                    <?php foreach ($menu as $m) : ?>
                         <div class="swiper-slide card-produk">
-                            <img src="/SushiStreet/assets/img/Lobster.jpg" alt="" width="400" height="400">
+                            <img src="/img/<?= $m['img']; ?>" alt="" width="400" height="400">
                             <div class="detail-produk">
                                 <div class="kategori">
-                                    <p class="label-kategori">Sushi</p>
-
-                                    <p class="price">Rp.35.000</p>
+                                    <p class="label-kategori"><?= $m['jenis_menu']; ?></p>
+                                    <p class="price">Rp <?= $m['harga']; ?></p>
                                 </div>
                                 <div class="title-card">
-                                    <h1>Lobster</h1>
+                                    <h1><?= $m['menu']; ?></h1>
                                 </div>
                                 <div class="review">
                                     <div class="star">
@@ -145,138 +145,15 @@
                                     <p>1.6k reviewer</p>
                                 </div>
                                 <div class="body-card">
-                                    <p>Lobster tempura, mango, cucumber roll, topped with spicy lobster & shrimp meat. sweet aioli, eel sauce.</p>
+                                    <p><?= $m['keterangan']; ?></p>
                                 </div>
                                 <div class="btn-produk">
                                     <a href="Menu.html">Detail</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide card-produk">
-                            <img src="/SushiStreet/assets/img/angry dragon.jpg" alt="" width="400" height="400">
-                            <div class="detail-produk">
-                                <div class="kategori">
-                                    <p class="label-kategori">Sushi</p>
-
-                                    <p class="price">Rp.40.000</p>
-                                </div>
-                                <div class="title-card">
-                                    <h1>Angry Dragon</h1>
-                                </div>
-                                <div class="review">
-                                    <div class="star">
-                                        <i class='bx bxs-star'></i> 4.8
-                                    </div>
-                                    <p>1.0k reviewer</p>
-                                </div>
-                                <div class="body-card">
-                                    <p>Shrimp tempura, avocado, topped with spicy kani. Citrus sweet miso, eel sauce.</p>
-                                </div>
-                                <div class="btn-produk">
-                                    <a href="Menu.html">Detail</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide card-produk">
-                            <img src="/SushiStreet/assets/img/american dream.jpg" alt="" width="400" height="400">
-                            <div class="detail-produk">
-                                <div class="kategori">
-                                    <p class="label-kategori">Sushi</p>
-
-                                    <p class="price">Rp.25.000</p>
-                                </div>
-                                <div class="title-card">
-                                    <h1>American Dream</h1>
-                                </div>
-                                <div class="review">
-                                    <div class="star">
-                                        <i class='bx bxs-star'></i> 5.0
-                                    </div>
-                                    <p>2.6k reviewer</p>
-                                </div>
-                                <div class="body-card">
-                                    <p>Rock shrimp tempura inside, topped with kani tartare, spicy creamy sauce and sweet miso, eel sauce.</p>
-                                </div>
-                                <div class="btn-produk">
-                                    <a href="Menu.html">Detail</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide card-produk">
-                            <img src="/SushiStreet/assets/img/mumy.jpg" alt="" width="400" height="400">
-                            <div class="detail-produk">
-                                <div class="kategori">
-                                    <p class="label-kategori">Sushi</p>
-
-                                    <p class="price">Rp.35.000</p>
-                                </div>
-                                <div class="title-card">
-                                    <h1>Mummy</h1>
-                                </div>
-                                <div class="review">
-                                    <div class="star">
-                                        <i class='bx bxs-star'></i> 4.8
-                                    </div>
-                                    <p>1.3k reviewer</p>
-                                </div>
-                                <div class="body-card">
-                                    <p>Shrimp tempura, cucumber inside, topped with lobster meat, seared pepper tuna. Yuzu mango sauce.</p>
-                                </div>
-                                <div class="btn-produk">
-                                    <a href="Menu.html">Detail</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide card-produk">
-                            <img src="/SushiStreet/assets/img/surf and turt roll.jpg" alt="" width="400" height="400">
-                            <div class="detail-produk">
-                                <div class="kategori">
-                                    <p class="label-kategori">Sushi</p>
-
-                                    <p class="price">Rp.50.000</p>
-                                </div>
-                                <div class="title-card">
-                                    <h1>Surf & Turf Roll</h1>
-                                </div>
-                                <div class="review">
-                                    <div class="star">
-                                        <i class='bx bxs-star'></i> 5.0
-                                    </div>
-                                    <p>2.8k reviewer</p>
-                                </div>
-                                <div class="body-card">
-                                    <p>Fresh lobster & cucumber with tartar sauce, top with seared filet mignon, black pepper mint hoisin sauce.</p>
-                                </div>
-                                <div class="btn-produk">
-                                    <a href="Menu.html">Detail</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide card-produk">
-                            <img src="/SushiStreet/assets/img/Sunset blvd.jpg" alt="" width="400" height="400">
-                            <div class="detail-produk">
-                                <div class="kategori">
-                                    <p class="label-kategori">Sushi</p>
-
-                                    <p class="price">Rp.30.000</p>
-                                </div>
-                                <div class="title-card">
-                                    <h1>Sunset BLVD</h1>
-                                </div>
-                                <div class="review">
-                                    <div class="star">
-                                        <i class='bx bxs-star'></i> 4.9
-                                    </div>
-                                    <p>1.6k reviewer</p>
-                                </div>
-                                <div class="body-card">
-                                    <p>Spicy tuna, salmon, yellowtail, avocado & crispy noodle inside, wrapped with soy paper. plum sauce.</p>
-                                </div>
-                                <div class="btn-produk">
-                                    <a href="Menu.html">Detail</a>
-                                </div>
-                            </div>
-                        </div>
+                        <?php endforeach; ?>
+                        
                     </div>
                 </div>
             </div>

@@ -1,12 +1,17 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\MenuModel;
 
 class C_Home extends BaseController
 {
     public function index()
     {
-        return view('Home/view_home');
+        $menuModel = new MenuModel();
+
+        $data['menu']= $menuModel->tampilMenuHome()->getResultArray();
+        
+        return view('Home/view_home', $data);
     }
 
     public function services()

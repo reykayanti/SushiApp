@@ -17,5 +17,10 @@ class MenuModel extends Model
         }
         return $this->where(['id' => $id])-> first();
     }
+    
+    public function tampilMenuHome(){
+        $query= $this->db->query( "SELECT * FROM tb_menu WHERE tb_menu.jenis_menu='sushi' ORDER BY id DESC LIMIT 5;");
+        return $query;
+    }
 }
 
