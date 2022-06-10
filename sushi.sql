@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 10 Jun 2022 pada 07.41
+-- Waktu pembuatan: 10 Jun 2022 pada 18.27
 -- Versi server: 10.4.22-MariaDB
 -- Versi PHP: 8.1.2
 
@@ -43,9 +43,12 @@ CREATE TABLE `tb_menu` (
 --
 
 INSERT INTO `tb_menu` (`id`, `jenis_menu`, `menu`, `keterangan`, `harga`, `img`, `created_at`, `updated_at`) VALUES
-(1, 'Sushi', 'Angry Dragon', 'Angry Dragon adalah sushi naga wkowkwo', 100000, '', '2022-06-10 07:31:46', '2022-06-10 07:31:46'),
-(2, 'sushi', 'American dream', 'american dream.jpg', 100000, 'keterangan menu nya ini yg skrg make foto', '2022-06-10 00:34:37', '2022-06-10 00:34:37'),
-(3, 'sushi', 'shrimp tempura roll', 'lalalalaa shrimp tempura roll', 4000, 'shrimp tempura roll.jpg', '2022-06-10 00:35:15', '2022-06-10 00:35:15');
+(3, 'sushi', 'crab stick', 'lalalalaa shrimp tempura roll', 4000, 'CRAB STICK.jpg', '2022-06-10 00:35:15', '2022-06-10 10:51:00'),
+(4, 'drink', 'lemnirelae', 'lemnirelaelemnirelaelemnirelae lemnirelaelemnirelae', 14000, 'lemnirelae.png', '2022-06-10 11:06:49', '2022-06-10 11:06:49'),
+(5, 'sushi', 'surf and turt roll', 'surf and turt roll surf and turt roll surf and turt roll', 100000, 'surf and turt roll.jpg', '2022-06-10 11:07:08', '2022-06-10 11:07:08'),
+(6, 'sushi', 'angry dragon', 'angry dragon angry dragon angry dragon', 34000, 'angry dragon.jpg', '2022-06-10 11:07:22', '2022-06-10 11:07:22'),
+(7, 'drink', 'Fanta', 'Minuman soda segar', 5000, 'fanta.jpg', '2022-06-10 11:23:23', '2022-06-10 11:23:23'),
+(8, 'sushi', 'Sunset blvd', 'ini adlaah suhsi lalala lilili yhuhuu yang mantaps', 80000, 'Sunset blvd.jpg', '2022-06-10 11:23:51', '2022-06-10 11:24:16');
 
 --
 -- Indexes for dumped tables
@@ -65,7 +68,7 @@ ALTER TABLE `tb_menu`
 -- AUTO_INCREMENT untuk tabel `tb_menu`
 --
 ALTER TABLE `tb_menu`
-  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
