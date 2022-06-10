@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 09 Jun 2022 pada 05.24
+-- Waktu pembuatan: 10 Jun 2022 pada 07.41
 -- Versi server: 10.4.22-MariaDB
 -- Versi PHP: 8.1.2
 
@@ -24,64 +24,48 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_jenis`
---
-
-CREATE TABLE `tb_jenis` (
-  `id_jenis` int(11) NOT NULL,
-  `jenis` varchar(255) NOT NULL,
-  `created_at` datetime NOT NULL,
-  `updated_at` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
 -- Struktur dari tabel `tb_menu`
 --
 
 CREATE TABLE `tb_menu` (
-  `id_menu` int(11) NOT NULL,
-  `jenis_menu` int(11) NOT NULL,
+  `id` int(12) NOT NULL,
+  `jenis_menu` varchar(255) NOT NULL,
   `menu` varchar(255) NOT NULL,
   `keterangan` text NOT NULL,
   `harga` double NOT NULL,
-  `image` varchar(255) NOT NULL,
+  `img` varchar(255) NOT NULL,
   `created_at` datetime NOT NULL,
   `updated_at` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `tb_menu`
+--
+
+INSERT INTO `tb_menu` (`id`, `jenis_menu`, `menu`, `keterangan`, `harga`, `img`, `created_at`, `updated_at`) VALUES
+(1, 'Sushi', 'Angry Dragon', 'Angry Dragon adalah sushi naga wkowkwo', 100000, '', '2022-06-10 07:31:46', '2022-06-10 07:31:46'),
+(2, 'sushi', 'American dream', 'american dream.jpg', 100000, 'keterangan menu nya ini yg skrg make foto', '2022-06-10 00:34:37', '2022-06-10 00:34:37'),
+(3, 'sushi', 'shrimp tempura roll', 'lalalalaa shrimp tempura roll', 4000, 'shrimp tempura roll.jpg', '2022-06-10 00:35:15', '2022-06-10 00:35:15');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `tb_jenis`
---
-ALTER TABLE `tb_jenis`
-  ADD PRIMARY KEY (`id_jenis`);
-
---
 -- Indeks untuk tabel `tb_menu`
 --
 ALTER TABLE `tb_menu`
-  ADD PRIMARY KEY (`id_menu`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT untuk tabel `tb_jenis`
---
-ALTER TABLE `tb_jenis`
-  MODIFY `id_jenis` int(11) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT untuk tabel `tb_menu`
 --
 ALTER TABLE `tb_menu`
-  MODIFY `id_menu` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
