@@ -45,6 +45,7 @@ $routes->get('/services', 'C_Home::services');
 $routes->get('/admin', 'C_Dashboard::menu');
 $routes->get('/addmenu', 'C_Dashboard::addmenu');
 $routes->get('/save', 'C_Dashboard::save');
+// $routes->get('/delete', 'C_Dashboard::delete');
 
 /*
  * --------------------------------------------------------------------

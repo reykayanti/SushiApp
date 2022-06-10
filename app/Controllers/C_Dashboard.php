@@ -34,13 +34,6 @@ class C_Dashboard extends BaseController
         ]);
 
         if ($validation_foto == false){
-            // $this->menuModel->save([ //auto save tanpa model
-			//     'menu' => $this->request->getVar('menu'),
-			//     'jenis_menu' => $this->request->getVar('jenis_menu'),
-			//     'keterangan' => $this->request->getVar('keterangan'),
-			//     'harga' => $this->request->getVar('harga')
-                
-		    // ]);
             return redirect()->to('/admin')->with('gagal', '<b>Foto Gagal di upload');
         } else{
             $upload = $this->request->getFile('img');
@@ -54,10 +47,17 @@ class C_Dashboard extends BaseController
 			    'harga' => $this->request->getVar('harga'),
                 'img' => $namaimg
 		    ]);
-
         return redirect()->to('/admin');
         }
-        
+    }
+    public function editmenu()
+    {
+        return view('dashboard/view_addmenu');
+    }
+    public function delete($id)
+    {
+        $this->menuModel->delete($id);
+        return redirect()->to('/admin');
     }
    
 }
