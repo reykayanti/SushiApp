@@ -77,7 +77,7 @@
               </li>
               
               <li class="nav-item">
-                <a href="../kanban.html" class="nav-link">
+                <a href="/logout" class="nav-link">
                   <i class="nav-icon fas fa-columns"></i>
                   <p>Logout</p>
                 </a>
