@@ -40,6 +40,9 @@ $routes->setAutoRoute(true);
 // routes home
 $routes->get('/', 'C_Home::index');
 $routes->get('/services', 'C_Home::services');
+$routes->get('/menu', 'C_Home::menu');
+$routes->get('/aboutus', 'C_Home::aboutus');
+$routes->get('/contact', 'C_Home::contact');
 
 // routes dashboard
 $routes->get('/admin', 'C_Dashboard::menu');

@@ -19,12 +19,7 @@ class C_Home extends BaseController
         return view('Home/view_services');
     }
 
-    public function menu()
-    {
-        return view('Home/view_menu');
-    }
-
-    public function about()
+    public function aboutus()
     {
         return view('Home/view_about');
     }
